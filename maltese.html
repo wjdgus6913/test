@@ -29,16 +29,6 @@
 			padding : 10px;
 			color : white;
 		}
-		a
-		{
-			color : white;
-			text-decoration : none;
-		}
-		a:hover
-		{
-			text-decoration : underline;
-			color : skyblue;
-		}
 		/*여기서부터*/
 		#header
 		{
@@ -108,15 +98,6 @@
 			padding : 5px;
 			margin : 10px;
 		}
-		.aside_menu:hover
-		{
-			color : blue;
-			text-decoration : none;
-		}
-		.aside_menu:active
-		{
-			text-decoration : underline;
-		}
 		#big
 		{
 			font-size : 20px;
@@ -142,9 +123,33 @@
 			list-style-type : none;
 			float : under-left;	
 		}
+		a
+		{
+			color : white;
+			text-decoration : none;
+		}
+		a:hover
+		{
+			text-decoration : underline;
+			color : skyblue;
+		}
 		hr
 		{
 			margin : 10px;
+		}
+		section
+		{
+			border : solid 2px skyblue;
+			background-color : #cadeea;
+		}
+		section li
+		{
+			text-align  : justify;
+		}
+		#dog_img
+		{
+			width : 600px;
+			float : left;
 		}
 	</style>
 </head>
@@ -192,7 +197,7 @@
 		<ul>
 			<li id='big'> 소형견 </li>
 			<ul> 
-				<li> <a href='maltese.html' class='aside_menu'>말티즈</a> </li>
+				<li> <b>말티즈</b> </li>
 				<li> 미니어처 푸들 </li>
 				<li> (미정) </li>
 			</ul>
@@ -213,7 +218,19 @@
 		</ul>
 	</aside>
 	<section>
-		<img src='./img/dog (2).jpg'>
+		<div>
+			<img src='./img/maltese.jpg' title='maltese' id='dog_img'>
+			<ul>
+				<li> 견종 : 말티즈 </li>
+				<li> 평균 신장 </li>
+				<ul> 
+					<li>수컷 : 21~25cm, 34kg</li>
+					<li>암컷 : 20~23cm, 34kg</li>
+				 </ul>
+				 <li> 모색 : 白 </li>
+				 <li> 발생지 : 지중해 분지 </li>
+			</ul>
+		</div>
 	</section>
 	<div class='clear'></div> 
 	<footer>
