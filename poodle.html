@@ -18,9 +18,8 @@
 			text-align : center;
 			background-image : url("./img/bg.jpg");
 			background-repeat : no-repeat;
-			background-size : 1800px;
 			background-attachment: fixed;
-			position : relative;
+			background-size : 1800px;
 			margin  : 0 200px;
 			padding : 30px;
 		}
@@ -30,19 +29,6 @@
 			text-align : right;
 			padding : 10px;
 			color : white;
-		}
-		a
-		{
-			color : white;
-			text-decoration : none;
-		}
-		a:hover
-		{
-			color : skyblue;
-		}
-		a:active
-		{
-			text-decoration : underline;
 		}
 		/*여기서부터*/
 		#header
@@ -75,22 +61,23 @@
 		}
 		.menu
 		{
-			display : inline;
+			//display : inline-block;
 		}
 		.dropdown
 		{
 			display : none;
 			position : absolute;
 			background-color: royalblue;
-			width : 150px;
+			width : 100px;
 			padding : 12px 16px;
-			margin : 10px;
 			color : white;
+			height : 30px;
 		}
 		.menu:hover, .dropdown
 		{
-			color : white;
 			display : inline-block;
+			color : mistyrose;
+			display : block;
 		}
 		aside
 		{
@@ -113,15 +100,6 @@
 			padding : 5px;
 			margin : 10px;
 		}
-		.aside_menu:hover
-		{
-			color : #4c61bd;
-			text-decoration : none;
-		}
-		.aside_menu:active
-		{
-			text-decoration : underline;
-		}
 		#big
 		{
 			font-size : 20px;
@@ -131,6 +109,28 @@
 		{
 			width : 1000px;
 			float : right;
+		}
+		#section
+		{
+			border : solid 2px skyblue;
+			background-color : #cadeea;
+			float : right;
+			position : relative;
+			width : 1200px;
+			height : 630px;
+			padding : 10px;
+		}
+		#profile
+		{
+			text-align : justify;
+			margin : 10px;
+			font-size : 20px;
+		}
+		#dog_img
+		{
+			width : 300px;
+			float : left;
+			margin : 0 30px 20px 0;
 		}
 		footer
 		{
@@ -147,6 +147,16 @@
 			list-style-type : none;
 			float : under-left;	
 		}
+		a
+		{
+			color : white;
+			text-decoration : none;
+		}
+		a:hover
+		{
+			text-decoration : underline;
+			color : skyblue;
+		}
 		hr
 		{
 			margin : 10px;
@@ -156,7 +166,7 @@
 <body>
 	<header>
 		<div id='top'>
-			<a href='login.html'>로그인</a> | <a href='join.html'>회원가입</a> | <a href='mypage.html'>마이페이지</a> | FAQ
+			<a href='login.html'>로그인</a> | <a href='join.html'>회원가입</a> | 마이페이지 | FAQ
 		</div>
 		<div id='header'>
 			<a href='index.html'><img src='./img/title.png' id='title'></a>
@@ -165,7 +175,7 @@
 	</header>
 	<nav>
 		<ul id='menu'>
-			<li> <span  class='menu'>페이지 소개</span></li>
+			<li class='menu'> 페이지 소개</li>
 			<div class='dropdown'>
 				페이지 소개
 			</div>
@@ -197,14 +207,14 @@
 		<ul>
 			<li id='big'> 소형견 </li>
 			<ul> 
-				<li> <a href='maltese.html' class='aside_menu'>말티즈</a> </li>
-				<li> <a href='poodle.html' class='aside_menu'>미니어처 푸들</a> </li>
+				<li> <b>말티즈</b> </li>
+				<li> 미니어처 푸들 </li>
 				<li> (미정) </li>
 			</ul>
 			<hr>
 			<li id='big'> 중형견 </li>
 			<ul> 
-				<li> <a href='jindo.html' class='aside_menu'>진돗개</a> </li>
+				<li> 진돗개 </li>
 				<li> (미정) </li>
 				<li> (미정) </li>
 			</ul>
@@ -218,7 +228,20 @@
 		</ul>
 	</aside>
 	<section>
-		<img src='./img/dog (2).jpg'>
+		<div id='section'>
+			<div class='img'>
+			<img src='./img/poodle.jpg' title='maltese' id='dog_img'>
+			</div>
+			<div id='profile'>
+			<ul>
+				<li> 견종 : 푸들 </li>
+				<li> 평균 신장 : 28cm/35cm </li>
+				 <li> 모색 : 검정, 흰색, 살구색, 크림색 등 </li>
+				 <li> 발생지 : 독일, 프랑스 </li>
+				 <li> 평균수명 : 12~15년 </li>
+			</ul>
+			</div>
+		</div>
 	</section>
 	<div class='clear'></div> 
 	<footer>

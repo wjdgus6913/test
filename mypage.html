@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title> 마이페이지 </title>
+	<style>
+		*
+		{
+			margin : 0;
+			padding : 0;
+		}
+		.clear
+		{
+			clear : both;
+		}
+		body
+		{
+			text-align : center;
+			background-image : url("./img/bg.jpg");
+			background-repeat : no-repeat;
+			background-size : 1800px;
+			background-attachment: fixed;
+			position : relative;
+			margin  : 0 200px;
+			padding : 30px;
+		}
+		#top
+		{
+			float : upright;
+			text-align : right;
+			padding : 10px;
+			color : white;
+		}
+		a
+		{
+			color : white;
+			text-decoration : none;
+		}
+		a:hover
+		{
+			color : skyblue;
+		}
+		a:active
+		{
+			text-decoration : underline;
+		}
+		/*여기서부터*/
+		#header
+		{
+			background-color : #504ebd;
+			border : solid 2px white;
+			height : 200px;
+			border-radius : 15px;
+		}
+		#title
+		{
+			width : 300px;
+			margin : 30px;
+			padding : 20px;
+			float : left;
+		}
+		/*여기까지 건드리면 헤더 좃된다 건들지마라*/
+
+		/*nav*/
+		nav
+		{
+			padding : 5px;
+			margin : 10px;
+		}
+		.menu
+		{
+			display : inline-block;
+			position : relative;
+		}
+		.dropdown
+		{
+			display : none;
+			position : absolute;
+			background-color : royalblue;
+			color : white;
+			width : 100px;
+			padding : 12px 16px;
+			//min-width : 160px;
+			//z-index : 1;
+
+		}
+		.menu:hover, .dropdown
+		{
+			display : block;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id='top'>
+			<a href='login.html'>로그인</a> | <a href='join.html'>회원가입</a> | <b>마이페이지</b> | FAQ
+		</div>
+		<div id='header'>
+			<a href='index.html'><img src='./img/title.png' id='title'></a>
+		</div>
+		<div class='clear'></div> 
+	</header>
+	<nav>
+		<div id='menu'>
+			<div class='menu'>
+				<span> 페이지 소개 </span>
+				<div class='dropdown'>
+					<p> 페이지 소개 </p>
+				</div>
+			</div>
+			<div class='menu'>
+				<span> 개의 분류 </span>
+				<div class='dropdown'>
+					<p> 소형견 </p>
+					<p> 중형견 </p>
+					<p> 대형견 </p>
+				</div>
+			</div>
+			<div class='menu'>
+				<span> 개 채널 </span>
+				<div class='dropdown'>
+					<p> 페퍼tv </p>
+					<p> 보듬tv </p>
+					<p> 솔라시도 </p>
+					<p> 8코기네 </p>
+					<p> 읏디의 고양이타이쿤 </p>
+				</div>
+			</div>
+			<div class='menu'>
+				<span> 공지사항 </span>
+				<div class='dropdown'>
+					<p> 공지사항 </p>
+				</div>
+			</div>
+	</nav>
+</body>
+</html>

@@ -75,6 +75,7 @@
 		}
 		.menu:hover, .dropdown
 		{
+			display : inline-block;
 			color : mistyrose;
 			display : block;
 		}
@@ -109,6 +110,28 @@
 			width : 1000px;
 			float : right;
 		}
+		#section
+		{
+			border : solid 2px skyblue;
+			background-color : #cadeea;
+			float : right;
+			position : relative;
+			width : 1200px;
+			height : 630px;
+			padding : 10px;
+		}
+		#profile
+		{
+			text-align : justify;
+			margin : 10px;
+			font-size : 20px;
+		}
+		#dog_img
+		{
+			width : 300px;
+			float : left;
+			margin : 0 30px 20px 0;
+		}
 		footer
 		{
 			background-color : #222d5f;
@@ -138,21 +161,6 @@
 		{
 			margin : 10px;
 		}
-		section
-		{
-			border : solid 2px skyblue;
-			background-color : #cadeea;
-		}
-		#profile
-		{
-			text-align : justify;
-			margin : 10px;
-		}
-		#dog_img
-		{
-			width : 600px;
-			float : left;
-		}
 	</style>
 </head>
 <body>
@@ -168,30 +176,30 @@
 	<nav>
 		<ul id='menu'>
 			<li class='menu'> 페이지 소개</li>
-			<ul class='dropdown'>
-				<li> 페이지 소개 </li>
-			</ul>
+			<div class='dropdown'>
+				페이지 소개
+			</div>
 			<li> | </li>
 			<li class='menu'> 개의 분류 </li>
-			<ul class='dropdown'>
-				<li> 소형견 </li>
-				<li> 중형견 </li>
-				<li> 대형견 </li>
-			</ul>
+			<div class='dropdown'>
+				<p> 소형견 </p>
+				<p> 중형견 </p>
+				<p> 대형견 </p>
+			</div>
 			<li> | </li>
 			<li class='menu'> 개 채널 </li>
-			<ul class='dropdown'>
-				<li> 페퍼tv </li>
-				<li> 보듬tv </li>
-				<li> 솔라시도 </li>
-				<li> 허스키 바이러스 </li>
-				<li> 읏디의 고양이타이쿤 </li>
-			</ul>
+			<div class='dropdown'>
+				<p> 페퍼tv </p>
+				<p> 보듬tv </p>
+				<p> 솔라시도 </p>
+				<p> 허스키 바이러스 </p>
+				<p> 읏디의 고양이타이쿤 </p>
+			</div>
 			<li> | </li>
 			<li class='menu'> 공지사항 </li>
-			<ul class='dropdown'>
-				<li> 공지사항 </li>
-			</ul>
+			<div class='dropdown'>
+				<p> 공지사항 </p>
+			</div>
 			<br>
 		</ul>
 	</nav>
@@ -220,8 +228,10 @@
 		</ul>
 	</aside>
 	<section>
-		<div>
+		<div id='section'>
+			<div class='img'>
 			<img src='./img/maltese.jpg' title='maltese' id='dog_img'>
+			</div>
 			<div id='profile'>
 			<ul>
 				<li> 견종 : 말티즈 </li>
