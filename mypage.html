@@ -64,6 +64,9 @@
 		/*nav*/
 		nav
 		{
+			background-color : lightblue;
+			border : solid 2px skyblue;
+			border-radius : 5px;
 			padding : 5px;
 			margin : 10px;
 		}
@@ -89,6 +92,10 @@
 			display : block;
 			position : relative;
 		}
+		.mypage
+		{
+			margin : 10px;
+		}
 		/*nav*/
 
 		/*aside*/
@@ -112,12 +119,69 @@
 		{
 			display : block;
 		}
-		aside p
+		#aside
 		{
 			color : black;
 			font-size : 30px;
 			float : left;
-			margin  : 5px;
+			margin  : 20px;
+		}
+		.phonenumber
+		{
+			width : 40px;
+		}
+		table, th, td
+		{
+			border : 1px solid skyblue;
+			border-collapse: collapse;
+			margin : auto;
+		}
+		table
+		{
+			border : solid 5px skyblue;
+		}
+		th,td
+		{
+			padding : 10px 20px;
+			margin :  30px;
+			font-size : 15px;
+			color : white;
+		}
+		td
+		{
+			text-align: justify;
+		}
+		#confirm
+		{
+			padding : 5px;
+			margin : 10px;
+			background-color : lightblue;
+			color : indigo;
+			font-weight : bold;
+		}
+		#join
+		{
+			background-color : #bd86d6;
+			border-radius : 5px;
+			color : #eeeeee;
+			padding : 10px;
+			margin : 50px;
+			font-weight : bold;
+		}
+		#cancle
+		{
+			background-color : crimson;
+			border-radius : 5px;
+			color : #eeeeee;
+			padding : 10px;
+			margin : 50px;
+			font-weight : bold;
+		}
+		h1
+		{
+			color : white;
+			padding : 30px;
+			font-size : 50px;
 		}
 	</style>
 </head>
@@ -166,14 +230,57 @@
 		</div>
 	</nav>
 	<aside>
-		<p>마이페이지</p>
+		<p id='aside'>마이페이지</p>
 		<p>
+		<hr>
 		<ul>
-			<li>개인정보 수정</li>
-			<li>사이트 탈퇴</li>
-			<li>드롭다운 모르겠다</li>
+			<li class='mypage'><b>개인정보 수정</b></li>
+			<li class='mypage'>사이트 탈퇴</li>
+			<li class='mypage'>드롭다운 모르겠다</li>
 		</ul>
 	</p>
 	</aside>
+	<section>
+		<h1> 개인정보 수정 </h1>
+		<table>
+		<tr>
+			<th> 아이디 </th>
+			<td> <input type='text'></td>
+		</tr>
+		<tr>
+			<th> 비밀번호 </th>
+			<td> <input type='password'></td>
+		</tr>
+		<tr>
+			<th> 비밀번호 재확인 </th>
+			<td><input type='password'></td>
+		</tr>
+		<tr>
+			<th> 이름 </th>
+			<td> <input type='text'></td>
+		</tr>
+		<tr> 
+			<th> 생년월일 </th>
+			<td> <input type='text' title='생년월일(6자)'></td>
+		</tr>
+		<tr>
+			<th> 성별 </th>
+			<td> 
+				<label><input type='radio' name='gender'>여자</label>
+				<label><input type='radio' name='gender'>남자</label>
+			</td>
+		</tr>
+		<tr>
+			<th> 본인 확인 이메일</th>
+			<td> <input type='text'></td>
+		</tr>
+		<tr>
+			<th> 휴대전화 </th>
+			<td> <input type='text' class='phonenumber'>-<input type='text'class='phonenumber'>-<input type='text'class='phonenumber'> <span id='confirm'>인증번호 받기</span>
+			</td>
+		</tr>
+	</table><br>
+	<span id='join'>수정하기</span> <span id='cancle'> 취소 </span>
+	</section>
 </body>
 </html>
