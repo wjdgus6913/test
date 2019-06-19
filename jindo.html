@@ -30,6 +30,19 @@
 			padding : 10px;
 			color : white;
 		}
+		a
+		{
+			color : white;
+			text-decoration : none;
+		}
+		a:hover
+		{
+			color : skyblue;
+		}
+		a:active
+		{
+			text-decoration : underline;
+		}
 		/*여기서부터*/
 		#header
 		{
@@ -53,6 +66,12 @@
 			background-color : lightblue;
 			border : solid 2px skyblue;
 			border-radius : 5px;
+			//height : 20px;
+			height : fixed;
+		}
+		.menu span
+		{
+
 		}
 		#menu li
 		{
@@ -61,31 +80,36 @@
 		}
 		.menu
 		{
-			//display : inline-block;
+			display : inline-block;
+			//position : relative;
 		}
 		.dropdown
 		{
 			display : none;
-			position : absolute;
-			background-color: royalblue;
+			//position : absolute;
+			background-color : royalblue;
+			color : white;
 			width : 100px;
 			padding : 12px 16px;
-			color : white;
-			height : 30px;
+			//min-width : 160px;
+			//z-index : 1;
+
 		}
-		.menu:hover, .dropdown
+		.menu:hover .dropdown
 		{
-			display : inline-block;
-			color : mistyrose;
 			display : block;
+			//position : relative;
 		}
 		aside
 		{
 			float : left;
 			width : 200px;
-			height : 400px;
+			height : 200px;
 			list-style-type : none;
 			color : white;
+			position : fixed;
+			top : 30px;
+			left : 30px;
 		}
 		aside ul
 		{
@@ -98,64 +122,53 @@
 		aside li
 		{
 			padding : 5px;
-			margin : 10px;
+			margin : 5px;
+		}
+		.aside_menu:hover
+		{
+			color : #4c61bd;
+			text-decoration : none;
+		}
+		.aside_menu:active
+		{
+			text-decoration : underline;
 		}
 		#big
 		{
 			font-size : 20px;
 			text-align : left;
 		}
-		section img
+		section
 		{
 			width : 1000px;
-			float : right;
-		}
-		#section
-		{
-			border : solid 2px skyblue;
-			background-color : #cadeea;
-			float : right;
-			position : relative;
-			width : 1200px;
-			height : 630px;
-			padding : 10px;
+			color : white;
 		}
 		#profile
 		{
-			text-align : justify;
-			margin : 10px;
-			font-size : 20px;
-		}
-		#dog_img
-		{
-			width : 300px;
 			float : left;
-			margin : 0 30px 20px 0;
+			text-align: left;
+			margin-left : 30px;
+		}
+		section img
+		{
+			width : 800px;
+			float : left;
 		}
 		footer
 		{
 			background-color : #222d5f;
-			width : 1500px;
+			width : 1000px;
 			margin : 10px;
 			padding  :10px;
 			border-radius : 10px;
 			color : white;
 			text-align :left;
+			position : relative;
 		}
 		footer ul
 		{
 			list-style-type : none;
 			float : under-left;	
-		}
-		a
-		{
-			color : white;
-			text-decoration : none;
-		}
-		a:hover
-		{
-			text-decoration : underline;
-			color : skyblue;
 		}
 		hr
 		{
@@ -166,69 +179,80 @@
 <body>
 	<header>
 		<div id='top'>
-			<a href='login.html'>로그인</a> | <a href='join.html'>회원가입</a> | 마이페이지 | FAQ
+			<a href='login.html'>로그인</a> | <a href='join.html'>회원가입</a> | <a href='mypage.html'>마이페이지</a> | <a href='underconstruction.html'>FAQ</a>
 		</div>
 		<div id='header'>
 			<a href='index.html'><img src='./img/title.png' id='title'></a>
 		</div>
 		<div class='clear'></div> 
 	</header>
-	<!--
 	<nav>
-		<ul id='menu'>
-			<li class='menu'> 페이지 소개</li>
-			<div class='dropdown'>
-				페이지 소개
+		<div id='menu'>
+			<div class='menu'>
+				<span> 페이지 소개 </span>
+				<div class='dropdown'>
+					<p> <a href='introduction.html'>페이지 소개</a> </p>
+				</div>
 			</div>
-			<li> | </li>
-			<li class='menu'> 개의 분류 </li>
-			<div class='dropdown'>
-				<p> 소형견 </p>
-				<p> 중형견 </p>
-				<p> 대형견 </p>
+			<div class='menu'>
+				<span> | </span>
 			</div>
-			<li> | </li>
-			<li class='menu'> 개 채널 </li>
-			<div class='dropdown'>
-				<p> 페퍼tv </p>
-				<p> 보듬tv </p>
-				<p> 솔라시도 </p>
-				<p> 허스키 바이러스 </p>
-				<p> 읏디의 고양이타이쿤 </p>
+			<div class='menu'>
+				<span> 개의 분류 </span>
+				<div class='dropdown'>
+					<p> <a href=smalldog.html>소형견</a> </p>
+					<p> <a href='middledog.html'>중형견</a> </p>
+					<p> <a href='bigdog.html'>대형견</a> </p>
+				</div>
 			</div>
-			<li> | </li>
-			<li class='menu'> 공지사항 </li>
-			<div class='dropdown'>
-				<p> 공지사항 </p>
+			<div class='menu'>
+				<span> | </span>
 			</div>
-			<br>
-		</ul>
+			<div class='menu'>
+				<span> 개 채널 </span>
+				<div class='dropdown'>
+					<p> <a href='https://www.youtube.com/channel/UCjLDL_hX8XrwSRMUba-39Fw'>페퍼tv</a> </p>
+					<p> <a href='https://www.youtube.com/channel/UCee1MvXr6E8qC_d2WEYTU5g'>보듬tv</a> </p>
+					<p> <a href='https://www.youtube.com/channel/UCE1N1MU4TwiEVrqJY6UW7Hw'>솔라시도</a> </p>
+					<p> <a href='https://www.youtube.com/channel/UCenG5DES1t6SYGrgzGNzWzQ'>8코기네</a> </p>
+					<p> <a href='https://www.youtube.com/channel/UCw_hMpIIuv_NPs-ZZXTsv_Q'>읏디의 고양이타이쿤(?)</a> </p>
+				</div>
+			</div>
+			<div class='menu'>
+				<span> | </span>
+			</div>
+			<div class='menu'>
+				<span> 공지사항 </span>
+				<div class='dropdown'>
+					<p> <a href='notice.html'>공지사항</a> </p>
+				</div>
+			</div>
+		</div>
 	</nav>
--->
 	<aside>
 		<ul>
 			<li id='big'> 소형견 </li>
 			<ul> 
-				<li> <a href='maltese.html'>말티즈</a> </li>
-				<li> <a href='poodle.html'>미니어처 푸들</a> </li>
-				<li> (미정) </li>
+				<li> <a href='maltese.html' class='aside_menu'>말티즈</a> </li>
+				<li> <a href='poodle.html' class='aside_menu'>미니어처 푸들</a> </li>
+				<li> <a href='chihuahua.html' class='aside_menu'> 치와와 </a> </li>
 			</ul>
 			<hr>
 			<li id='big'> 중형견 </li>
 			<ul> 
-				<li> <b>진돗개</b> </li>
-				<li> (미정) </li>
-				<li> (미정) </li>
+				<li> <a href='jindo.html' class='aside_menu'>진돗개</a> </li>
+				<li> <a href='bordercollie.html' class='aside_menu'>보더 콜리 </a> </li>
+				<li> <a href='samoyed.html' class='aside_menu'> 사모예드 </a> </li>
 			</ul>
 			<hr>
 			<li id='big'> 대형견 </li>
 			<ul> 
-				<li> (미정) </li>
-				<li> (미정) </li>
-				<li> (미정) </li>
+				<li> <a href='underconstruction.html' class='aside_menu'> 그레이트 데인 </a> </li>
+				<li> <a href='underconstruction.html' class='aside_menu'> 세인트 버나드 </a> </li>
 			</ul>
 		</ul>
 	</aside>
+
 	<section>
 		<div id='section'>
 			<div class='img'>

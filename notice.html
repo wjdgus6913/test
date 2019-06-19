@@ -18,8 +18,9 @@
 			text-align : center;
 			background-image : url("./img/bg.jpg");
 			background-repeat : no-repeat;
-			background-attachment: fixed;
 			background-size : 1800px;
+			background-attachment: fixed;
+			position : relative;
 			margin  : 0 200px;
 			padding : 30px;
 		}
@@ -58,7 +59,7 @@
 			padding : 20px;
 			float : left;
 		}
-		/*여기까지 건드리면 헤더 좃된다 건들지마라*/
+		/*여기까지 건드리면 헤더 망한다 건들지마라*/
 		nav
 		{
 			margin : 10px 0;
@@ -140,19 +141,33 @@
 		}
 		section
 		{
-			width : 1000px;
 			color : white;
+			text-align : justify;
+			width : 1030px;
 		}
-		#profile
+		h1
 		{
-			float : left;
-			text-align: left;
-			margin-left : 30px;
+			margin : 5px;
+			padding : 5px;
+			background-color : indigo;
+			width : 1400px;
+			text-align  : center;
 		}
-		section img
+		ol
 		{
-			width : 800px;
-			float : left;
+			margin : 0 50px;
+		}
+		ol li
+		{
+			font-size : 40px;
+		}
+		ul li
+		{
+			font-size : 15px;
+		}
+		strong
+		{
+			text-decoration : underline;
 		}
 		footer
 		{
@@ -231,53 +246,31 @@
 	</nav>
 	<aside>
 		<ul>
-			<li id='big'> 소형견 </li>
+			<li id='big'> 공지사항 </li>
 			<ul> 
-				<li> <a href='maltese.html' class='aside_menu'>말티즈</a> </li>
-				<li> <a href='poodle.html' class='aside_menu'>미니어처 푸들</a> </li>
-				<li> <a href='chihuahua.html' class='aside_menu'> 치와와 </a> </li>
-			</ul>
-			<hr>
-			<li id='big'> 중형견 </li>
-			<ul> 
-				<li> <a href='jindo.html' class='aside_menu'>진돗개</a> </li>
-				<li> <a href='bordercollie.html' class='aside_menu'>보더 콜리 </a> </li>
-				<li> <a href='samoyed.html' class='aside_menu'> 사모예드 </a> </li>
-			</ul>
-			<hr>
-			<li id='big'> 대형견 </li>
-			<ul> 
-				<li> <a href='underconstruction.html' class='aside_menu'> 그레이트 데인 </a> </li>
-				<li> <a href='underconstruction.html' class='aside_menu'> 세인트 버나드 </a> </li>
+				<li> <b>공지사항</b> </li>
 			</ul>
 		</ul>
 	</aside>
 	<section>
-		<div id='section'>
-			<div class='img'>
-			<img src='./img/maltese.jpg' title='maltese' id='dog_img'>
-			</div>
-			<div id='profile'>
+		<h1> 공지사항 </h1>
+		<ol>
+			<li class='left'> 개인정보 이용 안내 </li>
 			<ul>
-				<li> 견종 : 말티즈 </li>
-				<li> 평균 신장 </li>
-				<ul class='gender'> 
-					<li>수컷 : 21~25cm, 34kg</li>
-					<li>암컷 : 20~23cm, 34kg</li>
-				 </ul>
-				 <li> 모색 : 白 </li>
-				 <li> 발생지 : 지중해 분지 </li>
-				 <li> 평균수명 : 12~15년 </li>
+				<li> &lt;DD - Dogs Diary&gt;는 개인정보를 별도 수집하지 않으며, 회원가입, 로그인, 마이페이지 창에서 입력한 모든 개인정보는 해당 페이지를 빠져나가자마자 자동으로 폐기됩니다. 입력하셔봤자 부질없습니다. </li>
+				<li> &lt;DD - Dogs Diary&gt;는 개인정보 보호를 위한 여러분의 노력을 적극 응원합니다. </li>
 			</ul>
-			</div>
-			<div class='clear'>
-				
-		</div>
+			<li class='right'> 이용 안내 </li>
+			<ul>
+				<li> &lt;DD - Dogs Diary&gt;는 이 사이트의 정보에 대한 권한을 일체 갖지 않으며, 사이트의 내용과 관련되어 일어난 모든 오해와 불상사에 일절 관여하지 않습니다. </li>
+				<li> 아... 더 이상 쓸 게 생각이 안 난다. 뭐라도 써야 할 것 같은데. </li>
+			</ul>
+		</ol>
 	</section>
 	<div class='clear'></div> 
 	<footer>
 		<ul>
-			<li> 참고자료 </li>
+			<li> 참고자료 : 구글 </li>
 			<li> 경기도 부천시 원미구 심곡2동 신흥로56번길 25 </li>
 		</ul>
 		<ul>

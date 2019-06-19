@@ -18,8 +18,9 @@
 			text-align : center;
 			background-image : url("./img/bg.jpg");
 			background-repeat : no-repeat;
-			background-attachment: fixed;
 			background-size : 1800px;
+			background-attachment: fixed;
+			position : relative;
 			margin  : 0 200px;
 			padding : 30px;
 		}
@@ -58,7 +59,7 @@
 			padding : 20px;
 			float : left;
 		}
-		/*여기까지 건드리면 헤더 좃된다 건들지마라*/
+		/*여기까지 건드리면 헤더 망한다 건들지마라*/
 		nav
 		{
 			margin : 10px 0;
@@ -140,19 +141,29 @@
 		}
 		section
 		{
-			width : 1000px;
 			color : white;
+			text-align : justify;
 		}
-		#profile
+		h1
 		{
-			float : left;
-			text-align: left;
-			margin-left : 30px;
+			margin : 5px;
+			padding : 5px;
+			background-color : indigo;
+			width : 1400px;
+			text-align  : center;
 		}
-		section img
+		.q
 		{
-			width : 800px;
-			float : left;
+			font-size : 30px;
+			margin  : 20px 5px;
+		}
+		.a
+		{
+			margin : 5px;
+		}
+		strong
+		{
+			text-decoration : underline;
 		}
 		footer
 		{
@@ -231,53 +242,32 @@
 	</nav>
 	<aside>
 		<ul>
-			<li id='big'> 소형견 </li>
+			<li id='big'> 페이지 소개 </li>
 			<ul> 
-				<li> <a href='maltese.html' class='aside_menu'>말티즈</a> </li>
-				<li> <a href='poodle.html' class='aside_menu'>미니어처 푸들</a> </li>
-				<li> <a href='chihuahua.html' class='aside_menu'> 치와와 </a> </li>
-			</ul>
-			<hr>
-			<li id='big'> 중형견 </li>
-			<ul> 
-				<li> <a href='jindo.html' class='aside_menu'>진돗개</a> </li>
-				<li> <a href='bordercollie.html' class='aside_menu'>보더 콜리 </a> </li>
-				<li> <a href='samoyed.html' class='aside_menu'> 사모예드 </a> </li>
-			</ul>
-			<hr>
-			<li id='big'> 대형견 </li>
-			<ul> 
-				<li> <a href='underconstruction.html' class='aside_menu'> 그레이트 데인 </a> </li>
-				<li> <a href='underconstruction.html' class='aside_menu'> 세인트 버나드 </a> </li>
+				<li> <b>페이지 소개</b> </li>
 			</ul>
 		</ul>
 	</aside>
 	<section>
-		<div id='section'>
-			<div class='img'>
-			<img src='./img/maltese.jpg' title='maltese' id='dog_img'>
-			</div>
-			<div id='profile'>
-			<ul>
-				<li> 견종 : 말티즈 </li>
-				<li> 평균 신장 </li>
-				<ul class='gender'> 
-					<li>수컷 : 21~25cm, 34kg</li>
-					<li>암컷 : 20~23cm, 34kg</li>
-				 </ul>
-				 <li> 모색 : 白 </li>
-				 <li> 발생지 : 지중해 분지 </li>
-				 <li> 평균수명 : 12~15년 </li>
-			</ul>
-			</div>
-			<div class='clear'>
-				
-		</div>
+		<h1> 페이지 소개 </h1>
+		<p class='q'> 이 페이지의 목적 </p>
+		<p class='a'> 이 페이지는 다양한 견종에 대해 알아보기 위한 사이트입니다.<br> 개는 만 년도 넘는 오랜 기간 동안 인류와 함께 해왔던 동물로써, 이들에 대해 자세히 아는 것은 개와 인간의 더 나은 공존을 위해 도움이 될 것입니다.
+		</p>
+		<hr>
+		<p class='q'> 이 페이지의 기능 </p>
+		<p class='a'> &lt;DD - Dogs Diary&gt;에서는 개를 소형견, 중형견, 대형견 세 종류로 구분하고 이에 속하는 개들의 특징을 설명합니다. 근데 사실 위키백과에 더 잘 나와있을 거에요. 사실 개 잘 몰라요 과제 주제가 동물이어서 한 거지... 고양이를 해도 되었겠지만 요즘은 개가 귀엽더라고요 아 내가 무슨 소리를 하는 거지 아 몰라 멍멍이들 귀여워요 </p>
+		<hr>
+		<p class='q'> 그래서 하고 싶은 말이 뭐야 </p>
+		<p class='a'> 이 사이트가 다양한 견종에 대한 이해를 도울 수 있다면 영광이겠습니다. 이런 말 정도는 써야 좀 뭔가 공식 사이트 같겠지 아 사실 지금 잠이 자고 싶어요. 개인지 멍멍인지 모르겠고 잠이 자고 싶어요 개들도 잠은 자는데 아 이게 아니고... 아 그래 <strong>파파고에 '댕댕이'라고 쓰고 영어로 번역하면 'clog'가 출력된다</strong>는 아주 귀엽고도 놀라운 사실을 아시나요? 정말 쩔죠... 번역기 관리자의 창의력은 대단한 거 같아요. 구글에서 대충 긁어왔으므로 별로 존재가치가 없는 이 사이트의 그 다른 어떤 정보보다도 중요한 내용이기에 특별히 강조 처리 해 주었습니다. 무려 &lt;strong&gt; 태그도 써줬다고요 &lt;b&gt;태그가 아니라... 정말정말 중요합니다 파파고를 쓸 일이 생기시면 꼭 댕댕이를 입력해보세요. 그런 번역이 세상에 존재한다는 사실 자체만으로 과제를 밀고 나갈 힘이 생기는 듯하네요.
+		<br>뻥이에요. 과제에의 의지는 그렇게 쉽게 생겨나지 않아요. </p>
+		<hr>
+		<p class='q'> 마지막으로 </p>
+		<p class='a'> 사실 지금 사이트 완성이 군데군데 안 되어 있는데, 이 과제를 검사받을 즈음에는 꼭 다른 부분도 완성되어 있어서 사이트 모양은 냈으면 좋겠습니다. 그러니까 이건 유언 내지 클라이막스입니다. 그 아이언맨인가 뭐시긴가가 아윌비백이라는 명대사도 치잖아요. 그런 거에요.</p>
 	</section>
 	<div class='clear'></div> 
 	<footer>
 		<ul>
-			<li> 참고자료 </li>
+			<li> 참고자료 : 구글 </li>
 			<li> 경기도 부천시 원미구 심곡2동 신흥로56번길 25 </li>
 		</ul>
 		<ul>
